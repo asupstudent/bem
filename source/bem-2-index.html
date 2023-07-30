@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Интернет-магазин модной обуви Edison Shoes. Главная страница</title>
   </head>
-  <body class="page">
-    <header class="page__header page-header">
-      <nav class="page-header__navigation main-navigation">
+  <body class="page__body">
+    <header class="main-header">
+      <nav class="main-navigation">
         <a class="logo" href="#">
           <img class="logo__img" src="img/case_02/logo.svg" width="105" height="40" alt="Логотип интернет-магазина Edison Shoes">
         </a>
@@ -40,7 +40,7 @@
               <svg class="user-navigation-item__img" width="16" height="18" role="img">
                 <use href="img/sprite.svg#user"></use>
               </svg>
-              <span class="user-navigation-item__caption">Войти</span>
+              <span class="user-navigation-item__name">Войти</span>
             </a>
           </li>
           <li class="user-navigation__item user-navigation-item">
@@ -49,7 +49,7 @@
                 <use href="img/sprite.svg#heart"></use>
               </svg>
               <span class="user-navigation-item__amount"></span>
-              <span class="user-navigation-item__caption">Избранное</span>
+              <span class="user-navigation-item__name">Избранное</span>
             </a>
           </li>
           <li class="user-navigation__item user-navigation-item">
@@ -58,26 +58,66 @@
                 <use href="img/sprite.svg#user"></use>
               </svg>
               <span class="user-navigation-item__amount"></span>
-              <span class="user-navigation-item__caption">Корзина</span>
+              <span class="user-navigation-item__name">Корзина</span>
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="page__content">
+    <main class="page__main">
       <h1 class="visually-hidden">Магазин обуви бренда Edison</h1>
       <section class="promo">
-        <div class="promo__content banner">
-          <div class="banner__content">
-            <h2 class="banner__title">Большая <br>распродажа!</h2>
-            <img class="banner__img" src="img/case_02/banner_pic_shoe.jpg" width="1440" height="800" alt="Модные демисезонные кроссовки">
-            <p class="banner__description">Скидки до 70% на коллекцию демисезонной обуви</p>
-            <a class="banner__button button button--primary button--size-xl" href="#">Смотреть каталог</a>
-          </div>
-        </div>
+        <h2 class="promo__title">Большая <br>распродажа!</h2>
+        <img class="promo__img" src="img/case_02/banner_pic_shoe.jpg" width="1440" height="800" alt="Модные демисезонные кроссовки">
+        <p class="promo__description">Скидки до 70% на коллекцию демисезонной обуви</p>
+        <a class="button button--primary button--size-xl" href="#">Смотреть каталог</a>
+      </section>
+      <section class="catalog">
+        <header class="headline">
+          <h2 class="headline__title">Новая коллекция</h2>
+          <a class="headline__link" href="#">Смотреть все</a>
+        </header>
+        <ul class="catalog__list">
+          <li>
+            <article class="catalog-card">
+              <h3 class="catalog-card__title">Туфли Shein</h3>
+              <img class="catalog-card__image" src="img/case_02/shoe-pic-1.jpg" width="275" height="300" alt="Туфли Shein">
+              <p class="catalog-card__price">17 500 ₽</p>
+              <a class="button button--secondary" href="#">Подробнее</a>
+              <button class="button button--primary" type="button">В корзину</button>
+            </article>
+          </li>
+          <li>
+            <article class="catalog-card">
+              <h3 class="catalog-card__title">Мюли Grace</h3>
+              <img class="catalog-card__image" src="img/case_02/shoe-pic-2.jpg" width="275" height="300" alt="Мюли Grace">
+              <p class="catalog-card__price">15 000 ₽</p>
+              <a class="button button--secondary" href="#">Подробнее</a>
+              <button class="button button--primary" type="button">В корзину</button>
+            </article>
+          </li>
+          <li>
+            <article class="catalog-card">
+              <h3 class="catalog-card__title">Кроссовки Brand</h3>
+              <img class="catalog-card__image" src="img/case_02/shoe-pic-3.jpg" width="275" height="300" alt="Кроссовки Brand">
+              <p class="catalog-card__price">9 500 ₽</p>
+              <a class="button button--secondary" href="#">Подробнее</a>
+              <button class="button button--primary" type="button">В корзину</button>
+            </article>
+          </li>
+          <li>
+            <article class="catalog-card">
+              <h3 class="catalog-card__title">Ботинки Kelly</h3>
+              <img class="catalog-card__image" src="img/case_02/shoe-pic-4.jpg" width="275" height="300" alt="Ботинки Kelly">
+              <p class="catalog-card__price">18 500 ₽</p>
+              <a class="button button--secondary" href="#">Подробнее</a>
+              <button class="button button--primary" type="button">В корзину</button>
+            </article>
+          </li>
+        </ul>
       </section>
     </main>
-    <footer class="page__footer">
+    <footer class="main-footer">
 
     </footer>
   </body>
