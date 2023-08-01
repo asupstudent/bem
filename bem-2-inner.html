@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Интернет-магазин модной обуви Edison Shoes. Главная страница</title>
   </head>
-  <body class="page__body">
+  <body class="page__body page__body--inner-page">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="logo" href="#">
+        <a class="logo logo--theme-light" href="index.html">
           <img class="logo__image" src="img/case_02/logo.svg" width="105" height="40" alt="Логотип интернет-магазина Edison Shoes">
         </a>
-        <ul class="site-navigation">
+        <ul class="site-navigation site-navigation--theme-light">
           <li class="site-navigation__item">
-            <a class="site-navigation__link site-navigation__link--active" href="#">Обувь</a>
+            <a class="site-navigation__link" href="#">Обувь</a>
           </li>
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="#">Новинки</a>
@@ -31,33 +31,31 @@
             <a class="site-navigation__link site-navigation__link--accent" href="#">Sale</a>
           </li>
           <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">Блог</a>
+            <a class="site-navigation__link site-navigation__link--active" href="#">Блог</a>
           </li>
         </ul>
-        <ul class="user-navigation">
+        <ul class="user-navigation user-navigation--theme-light">
           <li class="user-navigation__item user-navigation-item">
-            <a class="user-navigation-item__link" href="#">
-              <svg class="user-navigation-item__image" width="16" height="18" role="img">
-                <use href="img/sprite.svg#user"></use>
-              </svg>
-              <span class="user-navigation-item__name">Войти</span>
+            <a class="user-navigation-item__link profile avatar" href="#">
+              <img class="profile__image avatar__image" src="img/case_03/user-pic-2.jpg" width="20" height="20" alt="Валерия">
+              <span class="profile__name avatar__name">Валерия</span>
             </a>
           </li>
           <li class="user-navigation__item user-navigation-item">
-            <a class="user-navigation-item__link" href="#">
+            <a class="user-navigation-item__link notification-badge" href="#">
               <svg class="user-navigation-item__image" width="18" height="16" role="img">
                 <use href="img/sprite.svg#heart"></use>
               </svg>
-              <span></span>
+              <span class="notification-badge__counter">7</span>
               <span class="user-navigation-item__name">Избранное</span>
             </a>
           </li>
           <li class="user-navigation__item user-navigation-item">
-            <a class="user-navigation-item__link" href="#">
+            <a class="user-navigation-item__link notification-badge" href="#">
               <svg class="user-navigation-item__image" width="18" height="18" role="img">
                 <use href="img/sprite.svg#user"></use>
               </svg>
-              <span></span>
+              <span class="notification-badge__counter">2</span>
               <span class="user-navigation-item__name">Корзина</span>
             </a>
           </li>
@@ -65,129 +63,7 @@
       </nav>
     </header>
     <main class="page__main">
-      <h1 class="visually-hidden">Магазин обуви бренда Edison</h1>
-      <section class="promo">
-        <h2 class="promo__title">Большая <br>распродажа!</h2>
-        <img class="promo__image" src="img/case_02/banner_pic_shoe.jpg" width="1440" height="800" alt="Модные демисезонные кроссовки">
-        <p class="promo__text">Скидки до 70% на коллекцию демисезонной обуви</p>
-        <a class="button button--primary button--size-xl" href="#">Смотреть каталог</a>
-      </section>
-      <section class="catalog">
-        <header class="headline">
-          <h2 class="headline__title">Новая коллекция</h2>
-          <a class="headline__link" href="#">Смотреть все</a>
-        </header>
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <article class="catalog-card">
-              <h3 class="catalog-card__title">Туфли Shein</h3>
-              <img class="catalog-card__image" src="img/case_02/shoe-pic-1.jpg" width="275" height="300" alt="Туфли Shein">
-              <p class="catalog-card__price">17 500 ₽</p>
-              <a class="button button--secondary" href="#">Подробнее</a>
-              <button class="button button--primary" type="button">В корзину</button>
-            </article>
-          </li>
-          <li class="catalog__item">
-            <article class="catalog-card">
-              <h3 class="catalog-card__title">Мюли Grace</h3>
-              <img class="catalog-card__image" src="img/case_02/shoe-pic-2.jpg" width="275" height="300" alt="Мюли Grace">
-              <p class="catalog-card__price">15 000 ₽</p>
-              <a class="button button--secondary" href="#">Подробнее</a>
-              <button class="button button--primary" type="button">В корзину</button>
-            </article>
-          </li>
-          <li class="catalog__item">
-            <article class="catalog-card">
-              <h3 class="catalog-card__title">Кроссовки Brand</h3>
-              <img class="catalog-card__image" src="img/case_02/shoe-pic-3.jpg" width="275" height="300" alt="Кроссовки Brand">
-              <p class="catalog-card__price">9 500 ₽</p>
-              <a class="button button--secondary" href="#">Подробнее</a>
-              <button class="button button--primary" type="button">В корзину</button>
-            </article>
-          </li>
-          <li class="catalog__item">
-            <article class="catalog-card">
-              <h3 class="catalog-card__title">Ботинки Kelly</h3>
-              <img class="catalog-card__image" src="img/case_02/shoe-pic-4.jpg" width="275" height="300" alt="Ботинки Kelly">
-              <p class="catalog-card__price">18 500 ₽</p>
-              <a class="button button--secondary" href="#">Подробнее</a>
-              <button class="button button--primary" type="button">В корзину</button>
-            </article>
-          </li>
-        </ul>
-      </section>
-      <section class="blog">
-        <header class="headline">
-          <h2 class="headline__title">Блог</h2>
-          <a class="headline__link" href="#">Все статьи</a>
-        </header>
-        <ul class="blog__list">
-          <li class="blog__item">
-            <article class="blog-card">
-              <h3 class="blog-card__title">Как ухаживать за кожанной обувью</h3>
-              <img class="blog-card__image" src="img/case_02/photo-2.jpg" width="380" height="233" alt="Кожаная обувь после обработки">
-              <p class="blog__text">Обувь из натуральной кожи практичная, красивая и долговечная. Благодаря материалу, в ней тепло зимой и не жарком летом. Чтобы кожаная обувь прослужила вам ни один год, за ней необходимо правильно и своевременно ухаживать.</p>
-              <a class="button button--primary" href="#">Читать статью</a>
-            </article>
-            <article class="blog-card">
-              <h3 class="blog-card__title">Как выбрать обувь в 2021</h3>
-              <img class="blog-card__image" src="img/case_02/photo-1.jpg" width="380" height="233" alt="Красивые кожаные туфли 2021 года">
-              <p class="blog__text">Стилист и ведущая программы “Все о моде” Ева Миллер рассказала о трендах обуви этого года. Современная мода удивляет многообразием формы и цветовой гаммы, а ключевым трендом является комфорт, удобство и лаконичность.</p>
-              <a class="button button--primary" href="#">Читать статью</a>
-            </article>
-            <article class="blog-card">
-              <h3 class="blog-card__title">Как правильно выбирать кеды</h3>
-              <img class="blog-card__image" src="img/case_02/photo.jpg" width="380" height="233" alt="Стильные кеды">
-              <p class="blog__text">Кеды - одна их самых популярных моделей обуви уже не первый сезон. Их можно носить с любой одеждой: платьем, костюмом, джинсами и т.д. Такую обувь любят и мужчины и женщины и дети. Рассказываем, как выбрать качественные кеды.</p>
-              <a class="button button--primary" href="#">Читать статью</a>
-            </article>
-          </li>
-        </ul>
-      </section>
-      <section class="reviews">
-        <header class="headline">
-          <h2 class="headline__title">Отзывы</h2>
-          <a class="headline__link" href="#">Все отзывы</a>
-        </header>
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <blockquote class="review">
-              <div class="review__headline">
-                <div class="review-author">
-                  <img class="review-author__image" src="img/case_02/user-pic-2.jpg" width="40" height="40" alt="Валерия">
-                  <cite class="review-author__name">Валерия</cite>
-                </div>
-                <time class="review__time" datetime="2021-06-28">28.06.2021</time>
-              </div>
-              <p class="review__text">Очень любим магазин Edison, покупаем тут обувь всем членам семьи. Отличное цена и качество, только оригиналы. Обменять неподошедший размер тоже не проблема. Спасибо, любимый магазин Edison!</p>
-            </blockquote>
-          </li>
-          <li class="reviews__item">
-            <blockquote class="review">
-              <div class="review__headline">
-                <div class="review-author">
-                  <img class="review-author__image" src="img/case_02/user-pic-1.jpg" width="40" height="40" alt="Сергей">
-                  <cite class="review-author__name">Сергей</cite>
-                </div>
-                <time class="review__time" datetime="2021-06-12">12.06.2021</time>
-              </div>
-              <p class="review__text">Покупаем детям обувь только в Edison. Дочки бегают везде, лужи, сугробы, грязь – обуви ничего не страшно. Когда становится малой, отдаем племянникам, потому что вся обувь выглядит как новая, все довольны.</p>
-            </blockquote>
-          </li>
-          <li class="reviews__item">
-            <blockquote class="review">
-              <div class="review__headline">
-                <div class="review-author">
-                  <img class="review-author__image" src="img/case_02/user-pic-3.jpg" width="40" height="40" alt="Елена">
-                  <cite class="review-author__name">Елена</cite>
-                </div>
-                <time class="review__time" datetime="2021-05-05">05.05.2021</time>
-              </div>
-              <p class="review__text">Впервые узнала об Edison от стилиста, она всегда покупает здесь обувь для клиентов и себе. Качество отличное, оригинальная обувь от известных брендов, причем цена меньше, чем на официальных сайтах.</p>
-            </blockquote>
-          </li>
-        </ul>
-      </section>
+
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
