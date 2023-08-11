@@ -6,6 +6,395 @@
     <title>MARKET - карточка товара</title>
   </head>
   <body>
+    <header class="page__header page-header">
+      <nav class="page-header__navigation main-navigation">
+        <a class="logo" href="#">
+          <img src="img/case_05/logo.svg" width="60" height="52" alt="Логотип">
+        </a>
+        <ul class="site-navigation">
+          <li class="site-navigation__item">
+            <a class="site-navigation__link site-navigation__link--active" href="#" >Электроника</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#" >Бытовая техника</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#" >Музыка и видео</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#" >Цифровые товары</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#" >Игры и консоли</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link site-navigation__link--accent" href="#" >Акции</a>
+          </li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="user-navigation__item user-navigation-item">
+            <a class="user-navigation-item__link profile-link" href="#">
+              <svg class="user-navigation-item__img" width="18" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 19v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M13 5a4 4 0 11-8 0 4 4 0 018 0z" stroke="#19191D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="profile-link__caption">Валерия</span>
+            </a>
+          </li>
+          <li class="user-navigation__item user-navigation-item">
+            <a class="user-navigation-item__link notofication-badge" href="#">
+              <svg class="user-navigation-item__img" width="17" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke="#19191D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="user-navigation-item__caption notofication-badge__counter">3</span>
+              <span class="user-navigation-item__caption">Сравнение</span>
+            </a>
+          </li>
+          <li class="user-navigation__item user-navigation-item">
+            <a class="user-navigation-item__link notification-badge" href="#">
+              <svg class="user-navigation-item__img" width="23" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.38 2.591a5.533 5.533 0 00-1.792-1.177 5.61 5.61 0 00-4.23 0c-.671.273-1.28.673-1.793 1.177L11.5 3.638 10.435 2.59a5.576 5.576 0 00-3.908-1.59 5.576 5.576 0 00-3.908 1.59A5.384 5.384 0 001 6.431c0 1.441.582 2.823 1.619 3.841L11.499 19l8.882-8.728a5.423 5.423 0 001.198-1.762 5.348 5.348 0 000-4.157 5.423 5.423 0 00-1.198-1.762z" stroke="#19191D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="user-navigation-item__caption notofication-badge__counter">4</span>
+              <span class="user-navigation-item__caption">Избранное</span>
+            </a>
+          </li>
+          <li class="user-navigation__item user-navigation-item">
+            <a class="user-navigation-item__link notification-badge" href="#">
+              <svg class="user-navigation-item__img" width="24" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6m15 15a1 1 0 11-2 0 1 1 0 012 0zm-11 0a1 1 0 11-2 0 1 1 0 012 0z" stroke="#19191D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="user-navigation-item__caption notofication-badge__counter">2</span>
+              <span class="user-navigation-item__caption">Корзина</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page__content">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Электроника</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Ноутбуки и компьютеры</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Apple</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--active" href="#">Моноблок Apple iMac 24 M1/8/256 Purple (MGPM3RU/A)</a>
+        </li>
+      </ul>
+      <article class="product-card card">
+        <div class="product-card__summary card__summary-panel">
+          <h1 class="product-card__title">Моноблок Apple iMac 24 M1/8/256 Purple (MGPM3RU/A)</h1>
+          <p class="product-card__code">Артикул 100 CD8 773 EF0</p>
+          <div class="product-card__rating rating">
+            <svg class="rating__star rating__star--active"
+              aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+            </svg>
+            <svg class="rating__star rating__star--active"
+              aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+            </svg>
+            <svg class="rating__star rating__star--active"
+              aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+            </svg>
+            <svg class="rating__star rating__star--active"
+              aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+            </svg>
+            <svg class="rating__star rating__star--active"
+              aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+            </svg>
+            <span class="rating__value">5</span>
+          </div>
+          <a class="product-card__reviews" href="#">24 отзыва</a>
+          <p class="product-card__price">149 000 ₽</p>
+          <a class="product-card__hire-purchase-terms link" href="#">В рассрочку от 7 000 в месяц</a>
+          <div class="product-card__controls">
+            <button class="product-card__button button" type="button">В корзину</button>
+            <a class="product-card__button image-button image-button--active" href="#">
+              <span class="visually-hidden">Добавить в избранное</span>
+              <svg class="image-button__img" width="19" height="16" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.535 2.415a5.014 5.014 0 00-1.622-1.047 5.155 5.155 0 00-3.828 0 5.014 5.014 0 00-1.622 1.047l-.963.93-.964-.93A5.093 5.093 0 006 1a5.093 5.093 0 00-3.535 1.415A4.745 4.745 0 001 5.828c0 1.28.527 2.509 1.465 3.414L10.5 17l8.035-7.758a4.82 4.82 0 001.084-1.566 4.682 4.682 0 000-3.695 4.819 4.819 0 00-1.084-1.566z" stroke="#B8B8CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="product-card__button image-button" href="#">
+              <span class="visually-hidden">Добавить в сравнение</span>
+              <svg class="image-button__img" width="13" height="16" viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke="#B8B8CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <ul class="product-card__sale-terms">
+            <li class="product-card__sale-term product-card__sale-term--delivery">Бесплатная доставка в Омск – 30 августа</li>
+            <li class="product-card__sale-term product-card__sale-term--self-delivery">Самовывоз – с 23 августа из <a class="product-card__link" href="#">3 магазинов</a></li>
+            <li class="product-card__sale-term product-card__sale-term--warranty">Расширенная гарантия AppleCare</li>
+          </ul>
+        </div>
+        <div class="product-card__img card__img-panel">
+          <div class="slider">
+            <div class="slider__viewport">
+              <img class="slider__img" src="img/case_06/card-photo-1.png" width="590" height="476" alt="Фото моноблока Apple iMac 24">
+            </div>
+            <button class="slider__button-prev slider-button" type="button">
+              <span class="visually-hidden">Назад</span>
+              <svg class="slider-button__img" width="12" height="7" viewBox="0 0 12 7" xmlns="http://www.w3.org/2000/svg"><path d="M5.975 2.707L1.943 6.674A1.149 1.149 0 01.088 6.31a1.105 1.105 0 01.249-1.226L5.167.33A1.14 1.14 0 015.974 0a1.155 1.155 0 01.808.331l4.887 4.752a1.119 1.119 0 010 1.591 1.149 1.149 0 01-1.606 0l-4.09-3.967z" fill="#19191D"/></svg>
+            </button>
+            <ul class="slider__previews preview-photos">
+              <li class="preview-photos__item">
+                <img class="preview-photos__img" src="img/case_06/preview-photo-1.png" width="125" height="110" alt="Фото 1">
+              </li>
+              <li class="preview-photos__item">
+                <img class="preview-photos__img" src="img/case_06/preview-photo-2.png" width="125" height="110" alt="Фото 2">
+              </li>
+              <li class="preview-photos__item">
+                <img class="preview-photos__img" src="img/case_06/preview-photo-3.png" width="125" height="110" alt="Фото 3">
+              </li>
+            </ul>
+            <button class="slider__button-next slider-button" type="button">
+              <span class="visually-hidden">Вперед</span>
+              <svg class="slider-button__img" width="12" height="7" viewBox="0 0 12 7" xmlns="http://www.w3.org/2000/svg"><path d="M6.02518 4.29283L10.0571 0.325865C10.2705 0.11715 10.5592 0 10.8601 0C11.161 0 11.4497 0.11715 11.6631 0.325865C11.7698 0.430041 11.8546 0.553981 11.9124 0.690538C11.9702 0.827095 12 0.973565 12 1.1215C12 1.26943 11.9702 1.4159 11.9124 1.55246C11.8546 1.68902 11.7698 1.81296 11.6631 1.91713L6.83385 6.66853C6.72797 6.77356 6.602 6.85693 6.4632 6.91382C6.32441 6.97071 6.17554 7 6.02518 7C5.87483 7 5.72596 6.97071 5.58716 6.91382C5.44837 6.85693 5.32239 6.77356 5.21651 6.66853L0.330322 1.91713C0.224761 1.81242 0.141246 1.68824 0.0845651 1.55171C0.0278846 1.41518 -0.0008476 1.26898 1.90361e-05 1.1215C-0.0008476 0.97402 0.0278846 0.827822 0.0845651 0.69129C0.141246 0.554757 0.224761 0.430575 0.330322 0.325865C0.543723 0.11715 0.832398 0 1.1333 0C1.4342 0 1.72287 0.11715 1.93627 0.325865L6.02518 4.29283Z" fill="#19191D"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-card__features card__features-panel tabs tabs--contrast">
+          <ul class="tabs__navigation">
+            <li class="tabs__navigation-item">
+              <a class="tabs__navigation-link tabs__navigation-link--active" href="#page-1">Характеристики</a>
+            </li>
+            <li class="tabs__navigation-item">
+              <a class="tabs__navigation-link" href="#page-2">Отзывы</a>
+            </li>
+            <li class="tabs__navigation-item">
+              <a class="tabs__navigation-link" href="#page-3">Наличие в магазинах</a>
+            </li>
+          </ul>
+          <div class="tabs__pages">
+            <div class="tabs__pages-item tabs__pages-item--active" id="page-1">
+              <section class="product-params">
+                <h2 class="visually-hidden">Характеристики товара</h2>
+                <div class="product-params__group">
+                  <h3 class="product-params__group-title">Заводские данные о товаре</h3>
+                  <dl class="product-params__list">
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Модель</dt>
+                      <dd class="product-params__item-value">iMac 24 2021</dd>
+                    </div>
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Бренд</dt>
+                      <dd class="product-params__item-value">Apple</dd>
+                    </div>
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Артикул производителя</dt>
+                      <dd class="product-params__item-value">MGPD3RU/A</dd>
+                    </div>
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Код товара</dt>
+                      <dd class="product-params__item-value">100 CD8 773 EF0</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div class="product-params__group">
+                  <h3 class="product-params__group-title">Основные характеристики</h3>
+                  <dl class="product-params__list">
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Операционная система</dt>
+                      <dd class="product-params__item-value">Mac OS</dd>
+                    </div>
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Игровой</dt>
+                      <dd class="product-params__item-value">Нет</dd>
+                    </div>
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Версия операционной системы</dt>
+                      <dd class="product-params__item-value">Big Sur</dd>
+                    </div>
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Год выхода модели</dt>
+                      <dd class="product-params__item-value">2021</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div class="product-params__group">
+                  <h3 class="product-params__group-title">Процессор</h3>
+                  <dl class="product-params__list">
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Производитель процессора</dt>
+                      <dd class="product-params__item-value">Apple</dd>
+                    </div>
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Количество ядер процессора</dt>
+                      <dd class="product-params__item-value">8</dd>
+                    </div>
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Модель процессора</dt>
+                      <dd class="product-params__item-value">M1</dd>
+                    </div>
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Процессор со встроеной графикой</dt>
+                      <dd class="product-params__item-value">Да</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div class="product-params__group">
+                  <h3 class="product-params__group-title">Память</h3>
+                  <dl class="product-params__list">
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Общий объем SSD, ГБ</dt>
+                      <dd class="product-params__item-value">512</dd>
+                    </div>
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Тип жесткого диска</dt>
+                      <dd class="product-params__item-value">SSD</dd>
+                    </div>
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Количество SSD</dt>
+                      <dd class="product-params__item-value">1</dd>
+                    </div>
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Объем оперативной памяти, в Гб</dt>
+                      <dd class="product-params__item-value">8</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div class="product-params__group">
+                  <h3 class="product-params__group-title">Экран</h3>
+                  <dl class="product-params__list">
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Диагональ экрана, дюймы</dt>
+                      <dd class="product-params__item-value">24</dd>
+                    </div>
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Технология матрицы</dt>
+                      <dd class="product-params__item-value">TFT</dd>
+                    </div>
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Разрешение экрана</dt>
+                      <dd class="product-params__item-value">4480х2520</dd>
+                    </div>
+                    <div class="product-params__item">
+                      <dt class="product-params__item-name">Разрешение экрана</dt>
+                      <dd class="product-params__item-value">4480x2520</dd>
+                    </div>
+                  </dl>
+                </div>
+              </section>
+            </div>
+            <div class="tabs__pages-item" id="page-2">
+              <div class="reviews">
+                <div class="review review--accent">
+                  <div class="review__headline">
+                    <a class="review__profile-link" href="#">Евгения</a>
+                    <div class="review__rating rating rating--size-medium">
+                      <svg class="rating__star rating__star--active"
+                        aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+                      </svg>
+                      <svg class="rating__star rating__star--active"
+                        aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+                      </svg>
+                      <svg class="rating__star rating__star--active"
+                        aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+                      </svg>
+                      <svg class="rating__star rating__star--active"
+                        aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+                      </svg>
+                      <svg class="rating__star rating__star--active"
+                        aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+                      </svg>
+                      <span class="rating__value">5</span>
+                    </div>
+                    <time class="review__date" datetime="2021-07-20">20.07.2021</time>
+                  </div>
+                  <p class="review__category">Достоинства</p>
+                  <pre class="review__response">Невероятно легкий и тонкий, всего 1 сантиметр, плюс 1 мм стекла спереди! По толщине почти как IPhone 12. Несмотря на то, что моноблок очень легкий, он очень устойчивый и можно не боясь наклонять экран. Мощный процессор М1. У меня уже был 21,5-дюймовый iMac, 2017 года, тут даже говорить не о чем, это несравнимый рывок вперёд по мощности. Звук из динамиков очень яркий, в новом iMac стоит 6 динамиков, два из них низкочастотные с системой подавления собственных вибраций. Дисплей в iMac действительно уникален, лучше модели пока просто не существует.</pre>
+                  <p class="review__category">Недостатки</p>
+                  <pre class="review__response">Кого-то может смутить небольшое количество разъемов, для SD-ридера или USB-A порта нужно будет купить переходники, для меня этот недостаток незначительный.</pre>
+                  <p class="review__category">Комментарии</p>
+                  <pre class="review__response">Я очень ждала выхода новой модели и не зря. Хоть у меня и есть моноблок 2017 года, эта модель стала в разы лучше, производительней, мощнее. А дизайн и такой нежный фиолетовый цвет – это моя любовь. Если раздумываете о покупке нового iMac, то не сомневайтесь и берите!</pre>
+                </div>
+                <div class="review">
+                  <div class="review__headline">
+                    <a class="review__profile-link" href="#">Никита</a>
+                    <div class="review__rating rating rating--size-medium">
+                      <svg class="rating__star rating__star--active"
+                        aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+                      </svg>
+                      <svg class="rating__star rating__star--active"
+                        aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+                      </svg>
+                      <svg class="rating__star rating__star--active"
+                        aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+                      </svg>
+                      <svg class="rating__star rating__star--active"
+                        aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+                      </svg>
+                      <svg class="rating__star rating__star--active"
+                        aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+                      </svg>
+                      <span class="rating__value">5</span>
+                    </div>
+                    <time class="review__date" datetime="2021-07-22">22.07.2021</time>
+                  </div>
+                  <p class="review__category">Достоинства</p>
+                  <pre class="review__response">Стильный дизайн, легкий, тонкий. Очень мощный. Качество картинки невероятное.</pre>
+                  <p class="review__category">Недостатки</p>
+                  <pre class="review__response">Не обнаружил</pre>
+                  <p class="review__category">Комментарии</p>
+                  <pre class="review__response">Это мой первый продукт от Apple, я очень доволен. Это небо и земля по сравнению с моим стареньким ноутбуком Aser.</pre>
+                </div>
+                <div class="review">
+                  <div class="review__headline">
+                    <a class="review__profile-link" href="#">Сергей</a>
+                    <div class="review__rating rating rating--size-medium">
+                      <svg class="rating__star rating__star--active"
+                        aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+                      </svg>
+                      <svg class="rating__star rating__star--active"
+                        aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+                      </svg>
+                      <svg class="rating__star rating__star--active"
+                        aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+                      </svg>
+                      <svg class="rating__star rating__star--active"
+                        aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+                      </svg>
+                      <svg class="rating__star rating__star--active"
+                        aria-hidden="true" width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z" fill="#5236FF"/>
+                      </svg>
+                      <span class="rating__value">5</span>
+                    </div>
+                    <time class="review__date" datetime="2021-07-19">19.07.2021</time>
+                  </div>
+                  <p class="review__category">Достоинства</p>
+                  <pre class="review__response">Мощность, экран</pre>
+                  <p class="review__category">Недостатки</p>
+                  <pre class="review__response">Недостатков нет</pre>
+                  <p class="review__category">Комментарии</p>
+                  <pre class="review__response">Я фотограф и качество изображения для меня очень важно. Я раньше работал на макбуке, решил обновить рабочий инструмент и не пожалел. Все программы, необходимые для работы, летают, фотошоп запускается за полторы секунды.</pre>
+                </div>
+                <a class="reviews__link link" href="#">Смотреть еще</a>
+              </div>
+            </div>
+            <div class="tabs__pages-item" id="page-3">
 
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="page__footer">
+
+    </footer>
   </body>
 </html>
