@@ -637,7 +637,33 @@
         </ul>
         <section class="product-section__filters filters">
           <h2 class="filters__title">Фильтры</h2>
-
+          <form class="filters__form filters-form" method="post" action="https://echo.htmlacademy.ru">
+            <button class="filters-form__reset" type="reset">Очистить</button>
+            <label for="filters">Поиск по фильтрам</label>
+            <input class="filters-form__search input input--search" type="text" placeholder="Поиск по фильтрам" name="filters" id="filters">
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__fieldset-caption">Цена</legend>
+            </fieldset>
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__fieldset-caption">Бренд</legend>
+            </fieldset>
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__fieldset-caption">Способ доставки</legend>
+            </fieldset>
+            <fieldset class="filters-form__fieldset">
+              <legend class="visually-hidden">Дополнительные параметры</legend>
+            </fieldset>
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__fieldset-caption">Наличие в магазине</legend>
+            </fieldset>
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__fieldset-caption">Продавец</legend>
+            </fieldset>
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__fieldset-caption">Рейтинг</legend>
+            </fieldset>
+            <button class="filters-form__button button button--additional" type="button">Все фильтры</button>
+          </form>
         </section>
         <div class="product-section__navigation">
           <ul class="pagination">
