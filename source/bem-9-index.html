@@ -77,6 +77,33 @@
           <li class="progress__item" data-value="section-3">Дополнительные услуги</li>
           <li class="progress__item" data-value="section-4">Подтверждение и оплата</li>
         </ul>
+        <section class="checkout-section checkout-section--active" id="section-1">
+          <h2 class="checkout-section__title">Контактные данные</h2>
+          <form class="checkout-form" action="#" method="post">
+            <p class="checkout-form__title">Получатель</p>
+            <div class="column-layout">
+              <label class="checkout-form__field checkout-form__field--required">
+                <span class="checkout-form__field-label">Имя</span>
+                <input class="checkout-form__field-control input" type="text" name="checkout-form-recipient-name" id="checkout-form-recipient-name">
+              </label>
+              <label class="checkout-form__field checkout-form__field--required">
+                <span class="checkout-form__field-label">Фамилия</span>
+                <input class="checkout-form__field-control input" type="text" name="checkout-form-recipient-surname" id="checkout-form-recipient-surname">
+              </label>
+              <label class="checkout-form__field checkout-form__field--required">
+                <span class="checkout-form__field-label">Телефон</span>
+                <input class="checkout-form__field-control input" type="text" name="checkout-form-recipient-phone" id="checkout-form-recipient-phone">
+              </label>
+              <label class="checkout-form__field">
+                <span class="checkout-form__field-label">E-mail</span>
+                <input class="checkout-form__field-control input" type="text" name="checkout-form-recipient-email" id="checkout-form-recipient-email">
+              </label>
+            </div>
+            <div class="checkout-form__controls">
+              <button class="checkout-form__button button button--primary" type="submit" data-target="section-2">Далее</button>
+            </div>
+          </form>
+        </section>
       </section>
     </main>
     <footer class="page__footer page-footer page-footer--compact">
