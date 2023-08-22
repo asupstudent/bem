@@ -63,7 +63,21 @@
       </nav>
     </header>
     <main class="page__content page-content">
-
+      <a class="page-content__headline link backward-link" href="#">
+        <svg class="backward-link__img" viewbox="0 0 26 14" width="26" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M25 7H1m0 0l5.783 6M1 7l5.783-6" stroke="tomato" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="backward-link__caption">Назад к корзине</span>
+      </a>
+      <section class="page-content__checkout checkout">
+        <h1 class="checkout__title">Оформление заказа</h1>
+        <ul class="checkout__progress progress">
+          <li class="progress__item progress__item--active" data-value="section-1">Контактные данные</li>
+          <li class="progress__item" data-value="section-2">Способ получения</li>
+          <li class="progress__item" data-value="section-3">Дополнительные услуги</li>
+          <li class="progress__item" data-value="section-4">Подтверждение и оплата</li>
+        </ul>
+      </section>
     </main>
     <footer class="page__footer page-footer page-footer--compact">
 
