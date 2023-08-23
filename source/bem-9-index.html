@@ -104,6 +104,152 @@
             </div>
           </form>
         </section>
+        <section class="checkout-section" id="section-2">
+          <h2 class="checkout-section__title">Способ получения</h2>
+          <form class="checkout-form" action="#" method="post">
+            <div class="tabs tabs--light">
+              <ul class="tabs__navigation">
+                <li class="tabs__navigation-item">
+                  <a class="tabs__navigation-link tabs__navigation--active" href="#page-1">Самовывоз</a>
+                </li>
+                <li class="tabs__navigation-item">
+                  <a class="tabs__navigation-link" href="#page-2">Доставка</a>
+                </li>
+              </ul>
+              <div class="tabs__pages">
+                <div class="tabs__pages-item tabs__pages-item--active" id="page-1">
+                  <div class="pick-up-points">
+                    <div class="pick-up-points__headline">
+                      <span class="pick-up-points__cell">Пункт выдачи</span>
+                      <span class="pick-up-points__cell">Дата доставки</span>
+                      <span class="pick-up-points__cell">Режим работы</span>
+                    </div>
+                    <label class="pick-up-points__row radio-button">
+                      <input class="visually-hidden" type="radio" name="pickup-point" value="pickup-point-1">
+                      <span class="pick-up-points__caption radio-button__label">
+                        <span class="pick-up-points__cell"><b>ТЦ «Омский»</b><br>Омск, ул. Ленина, 14</span>
+                        <span class="pick-up-points__cell">30 августа, (пн)</span>
+                        <span class="pick-up-points__cell">10:00 - 21:00</span>
+                      </span>
+                    </label>
+                    <label class="pick-up-points__row radio-button">
+                      <input class="visually-hidden" type="radio" name="pickup-point" value="pickup-point-2">
+                      <span class="pick-up-points__caption radio-button__label">
+                        <span class="pick-up-points__cell"><b>ТК «Каскад»</b><br>Омск, ул. Карла Маркса, 10</span>
+                        <span class="pick-up-points__cell">31 августа, (вт)</span>
+                        <span class="pick-up-points__cell">10:00 - 21:00</span>
+                      </span>
+                    </label>
+                    <label class="pick-up-points__row radio-button">
+                      <input class="visually-hidden" type="radio" name="pickup-point" value="pickup-point-3">
+                      <span class="pick-up-points__caption radio-button__label">
+                        <span class="pick-up-points__cell"><b>ТК «Континент»</b><br>Омск, ул. 70 лет Октября, 7</span>
+                        <span class="pick-up-points__cell">1 сентября, (ср)</span>
+                        <span class="pick-up-points__cell">10:00 - 21:00</span>
+                      </span>
+                    </label>
+                    <label class="pick-up-points__row radio-button">
+                      <input class="visually-hidden" type="radio" name="pickup-point" value="pickup-point-4">
+                      <span class="pick-up-points__caption radio-button__label">
+                        <span class="pick-up-points__cell"><b>ТК «Флагман»</b><br>Омск, ул. Герцена, 24</span>
+                        <span class="pick-up-points__cell">2 сентября, (чт)</span>
+                        <span class="pick-up-points__cell">10:00 - 20:00</span>
+                      </span>
+                    </label>
+                    <label class="pick-up-points__row radio-button">
+                      <input class="visually-hidden" type="radio" name="pickup-point" value="pickup-point-5">
+                      <span class="pick-up-points__caption radio-button__label">
+                        <span class="pick-up-points__cell"><b>ТК «Метромол»</b><br>Омск, ул. Комарова, 1/2</span>
+                        <span class="pick-up-points__cell">3 сентября, (пт)</span>
+                        <span class="pick-up-points__cell">10:00 - 22:00</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="tabs__pages-item" id="page-2">
+                  <label class="checkout-form__field checkout-form__field--required">
+                    <span class="checkout-form__field-label">Адрес доставки</span>
+                    <input class="checkout-form__field-control input" type="text" name="address" id="address">
+                  </label>
+                  <!-- linthtml-disable -->
+                  <label class="checkout-form__field">
+                    <span class="checkout-form__field-label">Время доставки</span>
+                    <select class="checkout-form__field-control select" name="time" id="time">
+                      <option>09:00-12:00</option>
+                      <option>12:00-18:00</option>
+                      <option>18:00-22:00</option>
+                    </select>
+                  </label>
+                  <label class="checkout-form__field checkout-form__field--required">
+                    <span class="checkout-form__field-label">Комментарий</span>
+                    <textarea class="checkout-form__field-control textarea" name="comment" id="comment"></textarea>
+                  </label>
+                  <!-- linthtml-enable -->
+                </div>
+              </div>
+            </div>
+            <div class="checkout-form__controls">
+              <button class="checkout-form__button button button--secondary" type="button" data-target="section-1">Назад</button>
+              <button class="checkout-form__button button button--primary" type="submit" data-target="section-3">Далее</button>
+            </div>
+          </form>
+        </section>
+        <section class="checkout-section" id="section-3">
+          <h2 class="checkout-section__title">Дополнительные услуги</h2>
+          <form class="checkout-form" action="#" method="post">
+            <div class="tariff-plans">
+              <label>
+                <input class="visually-hidden" type="radio" name="tariff-plan" value="tariff-plan-standart" aria-describedby="tariff-plan-standart">
+              </label>
+              <label>
+                <input class="visually-hidden" type="radio" name="tariff-plan" value="tariff-plan-complex" aria-describedby="tariff-plan-complex">
+              </label>
+              <label>
+                <input class="visually-hidden" type="radio" name="tariff-plan" value="tariff-plan-full" aria-describedby="tariff-plan-full">
+              </label>
+                <section class="tariff-plan" id="tariff-plan-standart" tabindex="0">
+                  <h3 class="tariff-plan__title">«Стандартная страховка»</h3>
+                  <p class="tariff-plan__price">1 290 ₽</p>
+                  <p class="tariff-plan__description">Обезопасит от финансовых затрат при утрате или повреждении покупки</p>
+                  <p class="tariff-plan__options-title">Защищает от:</p>
+                  <ul class="tariff-plan__options">
+                    <li class="tariff-plan__options">Воздействия жидкости</li>
+                    <li class="tariff-plan__options">Стихийных бедствий</li>
+                    <li class="tariff-plan__options">Внешних механических воздействий</li>
+                  </ul>
+                </section>
+                <section class="tariff-plan tariff-plan--hit" id="tariff-plan-complex" tabindex="0">
+                  <h3 class="tariff-plan__title">«Комплексная защита»</h3>
+                  <p class="tariff-plan__price">2 490 ₽</p>
+                  <p class="tariff-plan__description">«Стандартная страховка» плюс расширенный срок заводской гарантии до 2 лет</p>
+                  <p class="tariff-plan__options-title">Защищает от:</p>
+                  <ul class="tariff-plan__options">
+                    <li class="tariff-plan__options">Воздействия электротока</li>
+                    <li class="tariff-plan__options">Кражи, хулиганства</li>
+                    <li class="tariff-plan__options">Поломок в рамках гарантии</li>
+                  </ul>
+                </section>
+                <section class="tariff-plan tariff-plan--active" id="tariff-plan-full" tabindex="0">
+                  <h3 class="tariff-plan__title">«Полная защита»</h3>
+                  <p class="tariff-plan__price">5 690 ₽</p>
+                  <p class="tariff-plan__description">«Комплексная защита» плюс ремонт поломок, не являющихся гарантийным случаем на 2 года</p>
+                  <p class="tariff-plan__options-title">Защищает от:</p>
+                  <ul class="tariff-plan__options">
+                    <li class="tariff-plan__options">Не гарантийных случаев</li>
+                    <li class="tariff-plan__options">Разбитого экрана</li>
+                    <li class="tariff-plan__options">Воздействия в результате ДТП</li>
+                  </ul>
+                </section>
+            </div>
+            <div class="checkout-form__controls">
+              <button class="checkout-form__button button button--secondary" type="button" data-target="section-2">Назад</button>
+              <button class="checkout-form__button button button--primary" type="submit" data-target="section-4">Далее</button>
+            </div>
+          </form>
+        </section>
+        <section class="checkout-section" id="section-4">
+          <h2 class="checkout-section__title">Подтверждение и оплата</h2>
+        </section>
       </section>
     </main>
     <footer class="page__footer page-footer page-footer--compact">
