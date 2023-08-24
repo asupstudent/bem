@@ -249,11 +249,98 @@
         </section>
         <section class="checkout-section" id="section-4">
           <h2 class="checkout-section__title">Подтверждение и оплата</h2>
+          <form class="checkout-form" action="#" method="post">
+            <p class="checkout-form__section-description">Выберите способ оплаты</p>
+            <div class="payment-methods">
+              <label>
+                <input class="visually-hidden" type="radio" name="payment-method" value="payment-method-cash" aria-describedby="payment-method-cash" checked>
+              </label>
+              <label>
+                <input class="visually-hidden" type="radio" name="payment-method" value="payment-method-online" aria-describedby="payment-method-online">
+              </label>
+              <section class="payment-method payment-method--active" id="payment-method-cash" tabindex="0">
+                <h3 class="payment-method">Оплата при получении</h3>
+                <p class="payment-method__content">Рекомендуем оплатить онлайн или бесконтактно. Бесконтактная оплата возможна с доставкой в радиусе 10 км.</p>
+              </section>
+              <section class="payment-method" id="payment-method-online" tabindex="0">
+                <h3 class="payment-method">Оплатить онлайн</h3>
+                <div class="payment-method__content payment">
+                  <ul class="payment__list">
+                    <li class="payment__item">
+                      <img src="img/case_09/visa.svg" width="34" height="24" alt="visa">
+                    </li>
+                    <li class="payment__item">
+                      <img src="img/case_09/mastercard.svg" width="34" height="24" alt="mastercard">
+                    </li>
+                    <li class="payment__item">
+                      <img src="img/case_09/applepay.svg" width="34" height="24" alt="apple-pay">
+                    </li>
+                    <li class="payment__item">
+                      <img src="img/case_09/googlepay.svg" width="34" height="24" alt="google-pay">
+                    </li>
+                    <li class="payment__item">
+                      <img src="img/case_09/yandex.svg" width="34" height="24" alt="yandex">
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+            <p class="checkout-form__description">
+              <label class="checkbox">
+                <input class="visually-hidden" type="checkbox" name="sms" id="sms">
+                <span class="checkbox__label">Прислать SMS с номером заказа на телефон получателя</span>
+              </label>
+            </p>
+            <p class="checkout-form__description">
+              <label class="checkbox">
+                <input class="visually-hidden" type="checkbox" name="policy" id="policy">
+                <span class="checkbox__label">Я даю разрешение ООО «Маркет», в целях заключения и исполнения договора купли-продажи, обрабатывать, хранить, передавать мои персональные данные: фамилию, имя, номера домашнего и мобильного телефонов, адрес электронной почты.</span>
+              </label>
+            </p>
+            <div class="checkout-form__controls">
+              <button class="checkout-form__button button button--secondary" type="button" data-target="section-3">Назад</button>
+              <button class="checkout-form__submit-button button button--primary button--disabled" type="submit" disabled id="pay">Оформить заказ</button>
+            </div>
+          </form>
         </section>
+      </section>
+      <section class="page-content__card card-preview">
+        <h2 class="card-preview__title">Ваш заказ</h2>
+        <div class="card-preview__headline">
+          <p class="card-preview__headline-caption">Товары</p>
+          <p class="card-preview__headline-caption">2 позиции</p>
+        </div>
+        <ul class="card-preview__products">
+          <li class="card-preview__product">
+            <img class="card-preview__product-img" src="img/case_09/cart-photo-1.png" width="80" height="60" alt="Фото товара">
+            <p class="card-preview__product-name">Моноблок Apple iMac 24 M1/8/256 Purple (MGPM3RU/A)</p>
+            <p class="card-preview__product-sum">149 000 ₽</p>
+          </li>
+          <li class="card-preview__product">
+            <img class="card-preview__product-img" src="img/case_09/cart-photo-2.png" width="80" height="60" alt="Фото товара">
+            <p class="card-preview__product-name">Смарт браслет Samsung Galaxy Fit 2 White (SM-R220NZKACIS)</p>
+            <p class="card-preview__product-sum">2 800 ₽</p>
+          </li>
+        </ul>
+        <div class="card-preview__headline">
+          <p class="card-preview__headline-caption">Услуги</p>
+          <p class="card-preview__headline-caption">1 позиция</p>
+        </div>
+        <ul class="card-preview__services">
+          <li class="card-preview__service">
+            <p class="card-preview__service-name">Страховка «Полная защита»</p>
+            <p class="card-preview__service-sum">5 690 ₽</p>
+          </li>
+        </ul>
+        <div class="card-preview__total">
+          <p class="card-preview__total-caption">Итого</p>
+          <p class="card-preview__total-sum">157 490 ₽</p>
+        </div>
       </section>
     </main>
     <footer class="page__footer page-footer page-footer--compact">
-
+      <p class="page-footer__copyright">OOO «Маркет» © 2021 Все права защищены</p>
+      <a class="page-footer__policy" href="#">Политика конфиденциальности</a>
     </footer>
   </body>
 </html>
